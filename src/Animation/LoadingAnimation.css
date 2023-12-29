@@ -12,7 +12,9 @@
     animation:
         bg 4000ms linear 1;
 }
-
+:root {
+    background-color:'#000'
+}
 .loader-inner {
     bottom: 0;
     height: 120px;
