@@ -120,7 +120,7 @@ export default function App() {
             </div>
           </div>}
 
-        <AppBar position="sticky" sx={{ bgcolor: 'black' }}>
+        <AppBar position="fixed" sx={{ bgcolor: 'black' }}>
           <Container sx={{ width: '95vw' }}>
             <Toolbar disableGutters sx={{}}>
 
@@ -163,7 +163,7 @@ export default function App() {
                     }
                   }}
                 >
-                  <MenuItem key={'Home'} sx={{ transition: '.3s', ':hover': { bgcolor: '#222222' } }} component={Link} to='./' onClick={() => { setFilter('invert(89%) sepia(74%) saturate(7174%) hue-rotate(280deg) brightness(104%) contrast(123%)'); click(0); handleCloseNavMenu(); }}>
+                  <MenuItem key={'Home'} sx={{ transition: '.3s', ':hover': { bgcolor: '#222222' } }} component={Link} to='./' onClick={() => { setFilter(false); click(0); handleCloseNavMenu(); }}>
                     <Typography sx={{ color: '#CCCCCC' }} textAlign="center">Home</Typography>
                   </MenuItem>
                   <MenuItem key={'About'} sx={{ transition: '.3s', ':hover': { bgcolor: '#222222' } }} component={Link} to='./About' onClick={() => { setFilter(false); click(1); handleCloseNavMenu(); }}>
@@ -181,7 +181,7 @@ export default function App() {
                 </Menu>
               </Box>
               <Box sx={{ flexGrow: 1, justifyContent: 'left', display: { xs: 'none', md: 'flex' } }}>
-                <IconButton sx={{ mt: 2, color: 'white', display: 'block', }} component={Link} to='./' onClick={() => { setFilter('invert(89%) sepia(74%) saturate(7174%) hue-rotate(280deg) brightness(104%) contrast(123%)'); handleCloseNavMenu(); handleChange(-1); click(0); }}>
+                <Button sx={{ mt: 2, color: 'white', display: 'block', }} component={Link} to='./' onClick={() => { setFilter('invert(89%) sepia(74%) saturate(7174%) hue-rotate(280deg) brightness(104%) contrast(123%)'); handleCloseNavMenu(); handleChange(-1); click(0); }}>
 
                   <Box
                     component="img"
@@ -192,7 +192,7 @@ export default function App() {
                     alt="Mmills Logo"
                     src="mmillslogowhite.png"
                   />
-                </IconButton>
+                </Button>
                 <Tabs textColor='#CCCCCC' sx={{ my: 2, }} TabIndicatorProps={{
                   sx: {
                     backgroundColor: accents[accent],
@@ -217,19 +217,15 @@ export default function App() {
 
         </AppBar>
         <Box>
-          <Box sx={{
-            position: 'absolute', top: 0, width: '99.3vw', height: '100vh', visibility: { xs: 'collapse', sm: 'visible' }
-          }}>
-            <Animation shuffle={shuffle} accents={accents} accent={accent} />
-          </Box>
+          
           <Outlet />
           <Routes>
 
-            <Route index element={<Home color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></Home>}></Route>
-            <Route path="About" element={<About color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></About>}></Route>
-            <Route path="Awards" element={<Awards color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></Awards>}></Route>
-            <Route path="Experience" element={<Experience color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></Experience>}></Route>
-            <Route path="Projects" element={<Projects color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></Projects>}></Route>
+            <Route index element={<Box sx={{ userSelect: 'none', '-webkit-touch-callout': 'none', zIndex: 1, }}><Home color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></Home></Box>}></Route>
+            <Route path="About" element={<Box sx={{ userSelect: 'none', '-webkit-touch-callout': 'none', zIndex: 1, }}><About color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></About></Box>}></Route>
+            <Route path="Awards" element={<Box sx={{ userSelect: 'none', '-webkit-touch-callout': 'none' }}><Awards color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></Awards></Box>}></Route>
+            <Route path="Experience" element={<Box sx={{ userSelect: 'none', '-webkit-touch-callout': 'none' }}><Experience color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></Experience></Box>}></Route>
+            <Route path="Projects" element={<Box sx={{ userSelect: 'none', '-webkit-touch-callout': 'none' }}><Projects color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></Projects></Box>}></Route>
 
           </Routes>
 
