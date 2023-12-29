@@ -163,7 +163,7 @@ export default function App() {
                     }
                   }}
                 >
-                  <MenuItem key={'Home'} sx={{ transition: '.3s', ':hover': { bgcolor: '#222222' } }} component={Link} to='./' onClick={() => { setFilter(false); click(0); handleCloseNavMenu(); }}>
+                  <MenuItem key={'Home'} sx={{ transition: '.3s', ':hover': { bgcolor: '#222222' } }} component={Link} to='./' onClick={() => { setFilter('invert(89%) sepia(74%) saturate(7174%) hue-rotate(280deg) brightness(104%) contrast(123%)'); click(0); handleCloseNavMenu(); }}>
                     <Typography sx={{ color: '#CCCCCC' }} textAlign="center">Home</Typography>
                   </MenuItem>
                   <MenuItem key={'About'} sx={{ transition: '.3s', ':hover': { bgcolor: '#222222' } }} component={Link} to='./About' onClick={() => { setFilter(false); click(1); handleCloseNavMenu(); }}>
