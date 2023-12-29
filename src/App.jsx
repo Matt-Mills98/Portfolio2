@@ -218,18 +218,18 @@ export default function App() {
         </AppBar>
         <Box>
           <Box sx={{
-            position: 'fixed', top: 0, width: '99.3vw', height: '100vh', zIndex: 0, visibility: { xs: 'collapse', sm: 'visible' }
+            position: 'absolute', top: 0, width: '99.3vw', height: '100vh', visibility: { xs: 'collapse', sm: 'visible' }
           }}>
             <Animation shuffle={shuffle} accents={accents} accent={accent} />
           </Box>
           <Outlet />
           <Routes>
 
-            <Route index element={<Box sx={{ userSelect: 'none', '-webkit-touch-callout': 'none', zIndex: 1, }}><Home color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></Home></Box>}></Route>
-            <Route path="About" element={<Box sx={{ userSelect: 'none', '-webkit-touch-callout': 'none', zIndex: 1, }}><About color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></About></Box>}></Route>
-            <Route path="Awards" element={<Box sx={{ userSelect: 'none', '-webkit-touch-callout': 'none' }}><Awards color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></Awards></Box>}></Route>
-            <Route path="Experience" element={<Box sx={{ userSelect: 'none', '-webkit-touch-callout': 'none' }}><Experience color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></Experience></Box>}></Route>
-            <Route path="Projects" element={<Box sx={{ userSelect: 'none', '-webkit-touch-callout': 'none' }}><Projects color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></Projects></Box>}></Route>
+            <Route index element={<Home color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></Home>}></Route>
+            <Route path="About" element={<About color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></About>}></Route>
+            <Route path="Awards" element={<Awards color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></Awards>}></Route>
+            <Route path="Experience" element={<Experience color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></Experience>}></Route>
+            <Route path="Projects" element={<Projects color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></Projects>}></Route>
 
           </Routes>
 
