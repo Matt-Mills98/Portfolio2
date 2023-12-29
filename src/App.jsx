@@ -25,12 +25,8 @@ import About from './About/About';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
-import { useLocation } from 'react-router-dom'
+import LoadingAnimation from './Animation/LoadingAnimation';
 
-function HeaderView() {
-  const location = useLocation().pathname;
-  return location.pathname;
-}
 
 const accents = ['#b700ff', '#08f3ff', '#ffea00', '#09ff00', '#ff5500']
 const shuffle = (accent = 0) => [
@@ -85,7 +81,9 @@ export default function App() {
     <BrowserRouter>
 
       <Box>
-       
+        {!loaded &&
+          <LoadingAnimation color={accents[accent]}></LoadingAnimation>
+        }
 
         <AppBar position="fixed" sx={{ bgcolor: 'black' }}>
           <Container sx={{ width: '95vw' }}>
