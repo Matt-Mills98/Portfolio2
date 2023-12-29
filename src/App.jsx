@@ -85,40 +85,7 @@ export default function App() {
     <BrowserRouter>
 
       <Box>
-        {!loaded &&
-          <div class="loader">
-            <div class="loader-inner">
-              <div class="loader-line-wrap">
-                <div class="loader-line" style={{ borderColor: accents[accent] }}></div>
-              </div>
-              <div class="loader-line-wrap">
-                <div class="loader-line" style={{ borderColor: accents[accent] }}></div>
-              </div>
-              <div class="loader-line-wrap">
-                <div class="loader-line" style={{ borderColor: accents[accent] }}></div>
-              </div>
-              <div class="loader-line-wrap">
-                <div class="loader-line" style={{ borderColor: accents[accent] }}></div>
-              </div>
-              <div class="loader-line-wrap">
-                <div class="loader-line" style={{ borderColor: accents[accent] }}></div>
-              </div>
-              <div className='box11' style={{ backgroundColor: accents[accent] }}></div>
-              <div className='box12' style={{ backgroundColor: accents[accent] }}></div>
-              <div className='box13' style={{ backgroundColor: accents[accent] }}></div>
-              <div className='box14' style={{ backgroundColor: accents[accent] }}></div>
-              <div className='box15' style={{ backgroundColor: accents[accent] }}></div>
-
-              <img src='./mmillslogowhite.png' class='image'></img>
-              <div className='box21'></div>
-              <div className='box22'></div>
-              <div className='box23'></div>
-              <div className='box24'></div>
-              <div className='box25'></div>
-
-
-            </div>
-          </div>}
+       
 
         <AppBar position="fixed" sx={{ bgcolor: 'black' }}>
           <Container sx={{ width: '95vw' }}>
@@ -217,7 +184,11 @@ export default function App() {
 
         </AppBar>
         <Box>
-          
+          <Box sx={{
+            position: 'fixed', top: 0, width: '99.3vw', height: '100vh', zIndex: 0, visibility: { xs: 'collapse', sm: 'visible' }
+          }}>
+            <Animation shuffle={shuffle} accents={accents} accent={accent} />
+          </Box>
           <Outlet />
           <Routes>
 
