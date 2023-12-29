@@ -82,7 +82,9 @@ export default function App() {
 
       <Box>
         {!loaded &&
-          <LoadingAnimation color={accents[accent]} loaded={loaded}></LoadingAnimation>
+          <Box>
+            <LoadingAnimation color={accents[accent]} loaded={loaded}></LoadingAnimation>
+          </Box>
         }
 
         <AppBar position="fixed" sx={{ bgcolor: 'black' }}>
