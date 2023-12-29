@@ -77,15 +77,15 @@ export default function App() {
     setValue(newValue);
   };
 
-  return (
+  return !loaded ? (
+    <Box>
+      <LoadingAnimation color={accents[accent]} loaded={loaded}></LoadingAnimation>
+    </Box>
+  ) : (
     <BrowserRouter>
 
       <Box>
-        {!loaded &&
-          <Box>
-            <LoadingAnimation color={accents[accent]} loaded={loaded}></LoadingAnimation>
-          </Box>
-        }
+
 
         <AppBar position="fixed" sx={{ bgcolor: 'black' }}>
           <Container sx={{ width: '95vw' }}>
