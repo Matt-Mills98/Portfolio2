@@ -20,7 +20,7 @@ export default function Scene(props) {
       <color attach="background" args={['#0f0f0f']} />
       <ambientLight intensity={0.4} />
       <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} intensity={1} castShadow />
-      <Physics /*debug*/ gravity={[25, 0, 0]}>
+      <Physics /*debug*/ gravity={[18, 0, 0]}>
         <Pointer />
         {connectors.map((props, i) => <Connector key={i} {...props} />) /* prettier-ignore */}
         <Connector position={[10, 10, 5]}>
