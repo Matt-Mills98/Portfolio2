@@ -120,7 +120,7 @@ export default function App() {
             </div>
           </div>}
 
-        <AppBar position="fixed" sx={{ bgcolor: 'black' }}>
+        <AppBar position="sticky" sx={{ bgcolor: 'black' }}>
           <Container sx={{ width: '95vw' }}>
             <Toolbar disableGutters sx={{}}>
 
@@ -181,7 +181,7 @@ export default function App() {
                 </Menu>
               </Box>
               <Box sx={{ flexGrow: 1, justifyContent: 'left', display: { xs: 'none', md: 'flex' } }}>
-                <Button sx={{ mt: 2, color: 'white', display: 'block', }} component={Link} to='./' onClick={() => { setFilter('invert(89%) sepia(74%) saturate(7174%) hue-rotate(280deg) brightness(104%) contrast(123%)'); handleCloseNavMenu(); handleChange(-1); click(0); }}>
+                <IconButton sx={{ mt: 2, color: 'white', display: 'block', }} component={Link} to='./' onClick={() => { setFilter('invert(89%) sepia(74%) saturate(7174%) hue-rotate(280deg) brightness(104%) contrast(123%)'); handleCloseNavMenu(); handleChange(-1); click(0); }}>
 
                   <Box
                     component="img"
@@ -192,7 +192,7 @@ export default function App() {
                     alt="Mmills Logo"
                     src="mmillslogowhite.png"
                   />
-                </Button>
+                </IconButton>
                 <Tabs textColor='#CCCCCC' sx={{ my: 2, }} TabIndicatorProps={{
                   sx: {
                     backgroundColor: accents[accent],
