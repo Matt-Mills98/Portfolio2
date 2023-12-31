@@ -219,7 +219,7 @@ export default function Home(props) {
                             <Box m={1} maxWidth={'50vh'}>
                                 <Typography variant='body1' sx={{ color: '#CCCCCC', fontFamily: 'sans-serif' }}>2023 - Awaiting Spotify Approval</Typography>
                                 <Box m={1} maxWidth={'50vh'}>
-                                    <Typography variant='body1' sx={{ color: '#999999', fontFamily: 'sans-serif' }}>Echoes.fyi is a individual project built to assist users in retrieving and filtering song recommendations, viewing personal account statistics, and viewing track analyses. This was designed according to Spotify Design Guidelines. Full Track Streaming is available to users with premium accounts.</Typography>
+                                    <Typography variant='body1' sx={{ color: '#999999', fontFamily: 'sans-serif' }}>Echoes.fyi is an individual project built to assist users in retrieving and filtering song recommendations, viewing personal account statistics, and viewing track analyses. This was designed according to Spotify Design Guidelines. Full Track Streaming is available to users with premium accounts.</Typography>
                                 </Box>
                                 <Box m={1} maxWidth={'50vh'}>
                                     <Typography variant='body1' sx={{ color: '#999999', fontFamily: 'sans-serif' }}>ReactJS Web Application which consumes the Spotify Web API and Spotify Playback SDK. Deployed via CloudFlare. Graphics created via Photoshop.</Typography>
