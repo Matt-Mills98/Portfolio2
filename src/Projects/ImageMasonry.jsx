@@ -38,6 +38,7 @@ export default function ImageMasonry(props) {
                             loading="lazy"
 
                             style={{
+                                background:'#333333',
                                 borderBottomLeftRadius: 4,
                                 borderBottomRightRadius: 4,
                                 display: 'block',
