@@ -12,15 +12,16 @@ import { easing } from 'maath'
 
 
 export default function Scene(props) {
-  const {accents, shuffle, accent} = props;
+  const {accents, shuffle, accent, width } = props;
   
+
   const connectors = useMemo(() => shuffle(accent), [accent])
   return (
     <Canvas  shadows dpr={[1, 1.5]} gl={{ antialias: false }} camera={{ position: [0, 0, 15], fov: 17.5, near: 1, far: 20 }} {...props}>
       <color attach="background" args={['#0f0f0f']} />
       <ambientLight intensity={0.4} />
       <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} intensity={1} castShadow />
-      <Physics /*debug*/ gravity={[15, 0, 0]}>
+      <Physics /*debug*/ gravity={[Math.round(width/100), 0, 0]}>
         <Pointer />
         {connectors.map((props, i) => <Connector key={i} {...props} />) /* prettier-ignore */}
         <Connector position={[10, 10, 5]}>
