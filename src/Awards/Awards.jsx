@@ -43,7 +43,7 @@ export default function Awards(props) {
                 <CssBaseline />
                 <Fade in={loaded}>
 
-                    <Box sx={{margin:'10px'}}>
+                    <Box mb={2} sx={{margin:'10px'}}>
 
                         <Typography variant='h2' sx={{
                             color: 'white'

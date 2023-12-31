@@ -200,7 +200,7 @@ export default function Home(props) {
                                 <Typography variant='h6' sx={{ color: color, fontFamily: 'sans-serif' }}>WOPI Protocol Implementation</Typography>
                                 <IconButton ><Box component={'img'} src={'./BulletPoint.png'} sx={{ width: '15px', transition: '.3s', ':hover': { width: '18px', filter: 'brightness(5)' } }}></Box></IconButton>
                             </Stack>
-                            <Box m={1} maxWidth={'50vh'}>
+                            <Box m={1}  maxWidth={'50vh'}>
                                 <Typography variant='body1' sx={{ color: '#CCCCCC', fontFamily: 'sans-serif' }}>2023 - In Progress</Typography>
                                 <Box m={1} maxWidth={'50vh'}>
                                     <Typography variant='body1' sx={{ color: '#999999', fontFamily: 'sans-serif' }}>Word Online Integration into CobbleStone's Contract Insight to serve as an integrated document editor which can sideload Add-ins. This is essentially an ASP.NET API built with Microsoft being the client. Endpoints and functions are built depending on Microsoft's design specifications.</Typography>
@@ -209,7 +209,7 @@ export default function Home(props) {
                             </Box>
 
                         </Box>
-                        <Box m={1} mt={2}>
+                        <Box m={1} mt={2} >
                             <Stack sx={{':hover':{cursor:'pointer'}}} direction="row" alignItems="center" gap={1} onClick={() => { handleClickOpen('echoes') }}>
 
                                 <Typography variant='h6' sx={{ color: color, fontFamily: 'sans-serif' }}>Echoes.fyi</Typography>
@@ -243,7 +243,7 @@ export default function Home(props) {
                             </Box>
 
                         </Box>
-                        <Box m={1}>
+                        <Box m={1} mb={2}>
                             <Stack sx={{':hover':{cursor:'pointer'}}}direction="row" alignItems="center" gap={1} onClick={() => { handleClickOpen('addin') }}>
                                 <Typography variant='h6' sx={{ color: color, fontFamily: 'sans-serif' }}>CobbleStone Add-In for Word</Typography>
                                 <IconButton ><Box component={'img'} src={'./BulletPoint.png'} sx={{ width: '15px', transition: '.3s', ':hover': { width: '18px', filter: 'brightness(5)' } }}></Box></IconButton>
