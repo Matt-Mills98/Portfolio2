@@ -51,7 +51,7 @@ export default function Home(props) {
                         }}>Matt Mills</Typography>
 
                         <Typography variant='h5' sx={{ color: color, fontFamily: 'sans-serif' }}>Full Stack Developer</Typography>
-                        <Box mt={1} maxWidth={'50vh'}>
+                        <Box mt={y} maxWidth={'50vh'}>
                             <Tooltip title="C#" placement="top" arrow componentsProps={{
                                 tooltip: {
                                     sx: {

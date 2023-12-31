@@ -54,7 +54,7 @@ export default function About(props) {
                         }}>About</Typography>
                         <Typography variant='body1' sx={{ maxWidth: '50vh', color: '#999999', fontFamily: 'sans-serif' }}>Hi. I'm Matt, a software developer currently based in New Jersey, about 30 minutes outside of Philly. Listed below are some brief details about me to help you get to know me better. </Typography>
 
-                        <Box m={1} mt={2}>
+                        <Box m={1} my={2}>
                             <Typography variant='h6' sx={{ color: color, fontFamily: 'sans-serif' }}>Interests</Typography>
 
                             <Box m={1} maxWidth={'50vh'}>

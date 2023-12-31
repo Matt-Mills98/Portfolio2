@@ -194,7 +194,7 @@ export default function Home(props) {
                             color: 'white'
                         }}>Projects</Typography>
 
-                        <Box m={1} mt={2}>
+                        <Box m={1} my={2}>
                             <Stack sx={{':hover':{cursor:'pointer'}}} direction="row" alignItems="center" gap={1} onClick={() => { handleClickOpen('wopi') }}>
 
                                 <Typography variant='h6' sx={{ color: color, fontFamily: 'sans-serif' }}>WOPI Protocol Implementation</Typography>

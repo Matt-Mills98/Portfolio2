@@ -52,7 +52,7 @@ export default function Awards(props) {
                             <Typography variant='h2' sx={{
                                 color: 'white'
                             }}>Experience</Typography>
-                            <Box m={1} mt={2}>
+                            <Box m={1} my={2}>
                                 <Typography variant='h6' sx={{ color: color, fontFamily: 'sans-serif' }}>CobbleStone Software</Typography>
                                 <Box m={1} maxWidth={'50vh'}>
                                     <Typography variant='body1' sx={{ color: '#CCCCCC', fontFamily: 'sans-serif' }}>August 2021 - Current</Typography>
