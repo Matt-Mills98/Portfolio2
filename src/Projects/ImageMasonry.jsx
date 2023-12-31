@@ -27,7 +27,7 @@ export default function ImageMasonry(props) {
         <Box sx={{ width: '100%' }}>
             <Masonry columns={{ sm: 1, lg: 2 }} spacing={2}>
                 {itemData?.map((item, index) => (
-                    <div key={index} onClick={() => setIsHoveringFilter(!filter[index], index)}>
+                    <div key={index} onClick={() => setIsHoveringFilter(!filter[index], index)} style={{background:'#222222'}}>
 
                         <Typography variant={'h6'} sx={{ p: '10px', color: color, fontFamily: 'sans-serif' }}>{item.title}</Typography>
                         <img
@@ -38,7 +38,6 @@ export default function ImageMasonry(props) {
                             loading="lazy"
 
                             style={{
-                                background:'#333333',
                                 borderBottomLeftRadius: 4,
                                 borderBottomRightRadius: 4,
                                 display: 'block',
