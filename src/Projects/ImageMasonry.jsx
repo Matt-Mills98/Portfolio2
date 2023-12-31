@@ -30,31 +30,29 @@ export default function ImageMasonry(props) {
                     <div key={index} onClick={() => setIsHoveringFilter(!filter[index], index)}>
 
                         <Typography variant={'h6'} sx={{ p: '10px', color: color, fontFamily: 'sans-serif' }}>{item.title}</Typography>
-                        <div style={{ position: 'relative', textAlign: 'center', color: 'white' }}>
-                            <img
+                        <img
 
-                                srcSet={`${item.img}?w=162&auto=format&dpr=2 2x`}
-                                src={`${item.img}?w=162&auto=format`}
-                                alt={item.title}
-                                loading="lazy"
+                            srcSet={`${item.img}?w=162&auto=format&dpr=2 2x`}
+                            src={`${item.img}?w=162&auto=format`}
+                            alt={item.title}
+                            loading="lazy"
 
-                                style={{
-                                    borderBottomLeftRadius: 4,
-                                    borderBottomRightRadius: 4,
-                                    display: 'block',
-                                    width: '100%',
-                                    cursor: 'pointer',
-                                    transition: '.5s',
-                                    marginBottom: '50px',
-                                    filter: filter[index] ? ('brightness(.05)') : ('none')
-                                }}
-                            />
-                            {filter[index] &&
-                                <div style={{
-                                    position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', fontFamily: 'sans-serif', userSelect: 'none', width: '90%'
-                                }}>{item.description}</div>
-                            }
-                        </div>
+                            style={{
+                                borderBottomLeftRadius: 4,
+                                borderBottomRightRadius: 4,
+                                display: 'block',
+                                width: '100%',
+                                cursor: 'pointer',
+                                transition: '.5s',
+                                marginBottom: '50px',
+                                filter: filter[index] ? ('brightness(.05)') : ('none')
+                            }}
+                        />
+                        {filter[index] &&
+                            <div style={{
+                                position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', fontFamily: 'sans-serif', userSelect: 'none', width: '90%'
+                            }}>{item.description}</div>
+                        }
                     </div>
                 ))}
             </Masonry>
