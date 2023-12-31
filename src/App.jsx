@@ -191,11 +191,11 @@ export default function App() {
           <Outlet />
           <Routes>
 
-            <Route index element={<Box sx={{ userSelect: 'none', '-webkit-touch-callout': 'none', zIndex: 1, }}><Home color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></Home></Box>}></Route>
-            <Route path="About" element={<Box sx={{ userSelect: 'none', '-webkit-touch-callout': 'none', zIndex: 1, }}><About color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></About></Box>}></Route>
-            <Route path="Awards" element={<Box sx={{ userSelect: 'none', '-webkit-touch-callout': 'none' }}><Awards color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></Awards></Box>}></Route>
-            <Route path="Experience" element={<Box sx={{ userSelect: 'none', '-webkit-touch-callout': 'none' }}><Experience color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></Experience></Box>}></Route>
-            <Route path="Projects" element={<Box sx={{ userSelect: 'none', '-webkit-touch-callout': 'none' }}><Projects color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></Projects></Box>}></Route>
+            <Route index element={<Box sx={{ margin:1, userSelect: 'none', '-webkit-touch-callout': 'none' }}><Home color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></Home></Box>}></Route>
+            <Route path="About" element={<Box sx={{ margin:1, userSelect: 'none', '-webkit-touch-callout': 'none' }}><About color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></About></Box>}></Route>
+            <Route path="Awards" element={<Box sx={{margin:1, userSelect: 'none', '-webkit-touch-callout': 'none' }}><Awards color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></Awards></Box>}></Route>
+            <Route path="Experience" element={<Box sx={{ margin:1,userSelect: 'none', '-webkit-touch-callout': 'none' }}><Experience color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></Experience></Box>}></Route>
+            <Route path="Projects" element={<Box sx={{margin:1, userSelect: 'none', '-webkit-touch-callout': 'none' }}><Projects color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></Projects></Box>}></Route>
 
           </Routes>
 
