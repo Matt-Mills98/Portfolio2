@@ -1,23 +1,17 @@
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
-import './App.css';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Outlet, Link } from "react-router-dom";
 import Animation from './Animation/Animation';
 import Home from './Home/Home';
-import { Card, Tabs, Tab } from '@mui/material';
+import { Tabs, Tab } from '@mui/material';
 import Awards from './Awards/Awards'
 import Experience from './Experience/Experience'
 import Projects from './Projects/Projects'
