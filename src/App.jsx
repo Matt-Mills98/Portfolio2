@@ -95,7 +95,9 @@ export default function App() {
       <BrowserRouter>
 
         <Box sx={{ bgcolor: ' #0f0f0f' }}>
-          
+          {screenSize.width<700 && !loaded &&
+            <LoadingAnimation color={accents[accent]} loaded={loaded}></LoadingAnimation>
+          }
 
           <AppBar position="fixed" sx={{ bgcolor: 'black' }}>
             <Container sx={{ width: '95vw' }}>
