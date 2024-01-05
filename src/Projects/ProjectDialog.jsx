@@ -49,7 +49,7 @@ export default function SimpleDialog(props) {
                     </Stack>
                 </CardActionArea>
                 <CardContent>
-                    <Typography variant='body1' sx={{ color: '#CCCCCC', fontFamily: 'sans-serif' }}>{introText}</Typography>
+                    <Typography variant='body1' sx={{ fontFamily: 'sans-serif' }}>{introText}</Typography>
                     <Images color={color} itemData={itemData} link={link} logo={logo}></Images>
                 </CardContent>
             </Card>
