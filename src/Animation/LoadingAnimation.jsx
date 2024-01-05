@@ -1,10 +1,8 @@
 import './LoadingAnimation.css'
-import { Box } from '@mui/material';
 export default function LoadingAnimation(props) {
   const { color, loaded } = props;
 
   return !loaded ? (
-    <Box>
       <div class="loader">
         <div class="loader-inner">
           <div class="loader-line-wrap">
@@ -36,7 +34,7 @@ export default function LoadingAnimation(props) {
           <div className='box25'></div>
         </div>
       </div>
-    </Box>) : (<div></div>)
+   ) : (<div></div>)
 
 
 }
