@@ -41,6 +41,12 @@ const shuffle = (accent = 0) => [
   { color: accents[accent], roughness: 0.1, accent: true }
 ]
 
+function getCurrentDimension() {
+  return {
+    width: window.innerWidth,
+    height: window.innerHeight
+  }
+}
 
 export default function App() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -48,12 +54,25 @@ export default function App() {
   const [filter, setFilter] = React.useState('');
   const [value, setValue] = React.useState(-1);
   const [loaded, setLoaded] = React.useState(false);
+  const [screenSize, setScreenSize] = React.useState(getCurrentDimension());
+
   const delay = ms => new Promise(res => setTimeout(res, ms));
 
   const handleLoading = async () => {
     await delay(4000);
     setLoaded(true);
   }
+  React.useEffect(() => {
+    const updateDimension = () => {
+      setScreenSize(getCurrentDimension())
+    }
+    window.addEventListener('resize', updateDimension);
+
+
+    return (() => {
+      window.removeEventListener('resize', updateDimension);
+    })
+  }, [screenSize])
 
   React.useEffect(() => {
     handleLoading();
@@ -76,7 +95,7 @@ export default function App() {
     setValue(newValue);
   };
 
-  return  (
+  return (
     <BrowserRouter>
 
       <Box>
@@ -186,16 +205,16 @@ export default function App() {
           <Box sx={{
             position: 'fixed', top: 0, width: '99.3vw', height: '100vh', zIndex: 0, visibility: { xs: 'collapse', sm: 'visible' }
           }}>
-            <Animation shuffle={shuffle} accents={accents} accent={accent} />
+            <Animation shuffle={shuffle} accents={accents} accent={accent} width={screenSize.width} />
           </Box>
           <Outlet />
           <Routes>
 
-            <Route index element={<Box sx={{ userSelect: 'none', '-webkit-touch-callout': 'none', zIndex: 1, }}><Home color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></Home></Box>}></Route>
-            <Route path="About" element={<Box sx={{ userSelect: 'none', '-webkit-touch-callout': 'none', zIndex: 1, }}><About color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></About></Box>}></Route>
-            <Route path="Awards" element={<Box sx={{ userSelect: 'none', '-webkit-touch-callout': 'none' }}><Awards color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></Awards></Box>}></Route>
-            <Route path="Experience" element={<Box sx={{ userSelect: 'none', '-webkit-touch-callout': 'none' }}><Experience color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></Experience></Box>}></Route>
-            <Route path="Projects" element={<Box sx={{ userSelect: 'none', '-webkit-touch-callout': 'none' }}><Projects color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></Projects></Box>}></Route>
+            <Route index element={<Box sx={{ margin: 1, userSelect: 'none', '-webkit-touch-callout': 'none' }}><Home color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></Home></Box>}></Route>
+            <Route path="About" element={<Box sx={{ margin: 1, userSelect: 'none', '-webkit-touch-callout': 'none' }}><About color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></About></Box>}></Route>
+            <Route path="Awards" element={<Box sx={{ margin: 1, userSelect: 'none', '-webkit-touch-callout': 'none' }}><Awards color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></Awards></Box>}></Route>
+            <Route path="Experience" element={<Box sx={{ margin: 1, userSelect: 'none', '-webkit-touch-callout': 'none' }}><Experience color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></Experience></Box>}></Route>
+            <Route path="Projects" element={<Box sx={{ margin: 1, userSelect: 'none', '-webkit-touch-callout': 'none' }}><Projects color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></Projects></Box>}></Route>
 
           </Routes>
 

@@ -43,12 +43,12 @@ export default function Awards(props) {
                 <CssBaseline />
                 <Fade in={loaded}>
 
-                    <Box sx={{margin:'10px'}}>
+                    <Box mb={2} sx={{margin:'10px'}}>
 
                         <Typography variant='h2' sx={{
                             color: 'white'
                         }}>Awards</Typography>
-                        <Box m={1} mt={2}>
+                        <Box m={1} my={2}>
                             <Typography variant='h6' sx={{ color: color, fontFamily: 'sans-serif' }}>Developer of the Year - CobbleStone Software 2023</Typography>
                             <Box m={1} maxWidth={'50vh'}>
                                 <Typography variant='body1' sx={{ color: '#999999', fontFamily: 'sans-serif' }}>Awarded for my contributions to CobbleStone's Contract Insight Software through the completion of the CobbleStone Add-In for Word</Typography>

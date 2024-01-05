@@ -52,9 +52,9 @@ export default function Awards(props) {
                             <Typography variant='h2' sx={{
                                 color: 'white'
                             }}>Experience</Typography>
-                            <Box m={1} mt={2}>
+                            <Box m={1} my={2}>
                                 <Typography variant='h6' sx={{ color: color, fontFamily: 'sans-serif' }}>CobbleStone Software</Typography>
-                                <Box m={1} maxWidth={'50vh'}>
+                                <Box m={1} maxWidth={'50vh'} mb={2}>
                                     <Typography variant='body1' sx={{ color: '#CCCCCC', fontFamily: 'sans-serif' }}>August 2021 - Current</Typography>
                                     <Box m={1} maxWidth={'50vh'}>
                                         <Typography variant='body4' sx={{ color: '#999999', fontFamily: 'sans-serif' }}>Independently developed a React.js Word Add-In for integration with CobbleStone’s Contract Management Software (Contract Insight) using a REST API.</Typography>
