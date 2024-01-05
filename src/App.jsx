@@ -98,7 +98,7 @@ export default function App() {
   return (
     <BrowserRouter>
 
-      <Box>
+      <Box sx={{bgcolor:' #0f0f0f'}}>
         {!loaded &&
           <Box>
             <LoadingAnimation color={accents[accent]} loaded={loaded}></LoadingAnimation>
