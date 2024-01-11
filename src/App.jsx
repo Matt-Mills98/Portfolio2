@@ -119,7 +119,7 @@ export default function App() {
                         width: '35px', height: '35px', filter: filter
                       }}
                       alt="Mmills Logo"
-                      src="mmillslogowhite.png"
+                      src="mmlogowhite.svg"
                     />
                   </IconButton>
                   <Menu
@@ -169,7 +169,7 @@ export default function App() {
                         width: '35px', height: '35px', filter: filter
                       }}
                       alt="Mmills Logo"
-                      src="mmillslogowhite.png"
+                      src="mmlogowhite.svg"
                     />
                   </IconButton>
                   <Tabs textColor='#CCCCCC' sx={{ my: 2, }} TabIndicatorProps={{

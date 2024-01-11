@@ -5,33 +5,21 @@ export default function LoadingAnimation(props) {
   return !loaded ? (
       <div class="loader">
         <div class="loader-inner">
-          <div class="loader-line-wrap">
-            <div class="loader-line" style={{ borderColor: color }}></div>
-          </div>
-          <div class="loader-line-wrap">
-            <div class="loader-line" style={{ borderColor: color }}></div>
-          </div>
-          <div class="loader-line-wrap">
-            <div class="loader-line" style={{ borderColor: color }}></div>
-          </div>
-          <div class="loader-line-wrap">
-            <div class="loader-line" style={{ borderColor: color }}></div>
-          </div>
-          <div class="loader-line-wrap">
-            <div class="loader-line" style={{ borderColor: color }}></div>
-          </div>
-          <div className='box11' style={{ backgroundColor: color }}></div>
-          <div className='box12' style={{ backgroundColor: color }}></div>
-          <div className='box13' style={{ backgroundColor: color }}></div>
-          <div className='box14' style={{ backgroundColor: color }}></div>
-          <div className='box15' style={{ backgroundColor: color }}></div>
+          
 
-          <img src='./mmillslogowhite.png' class='image'></img>
-          <div className='box21'></div>
-          <div className='box22'></div>
-          <div className='box23'></div>
-          <div className='box24'></div>
-          <div className='box25'></div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 4358.875 3889.09" className='image'>
+          <defs>
+            <linearGradient id="linear-gradient" x1="-100%" y1="0" x2="200%" y2="0" >
+            <stop offset="0" stop-color={color}>
+               <animate attributeName="offset" values="0;0.2;0.5; 1" dur="3s" repeatCount="indefinite"  /> 
+            </stop>
+            <stop offset="0.5" stop-opacity="0">
+                <animate attributeName="offset" values="0.5;0.7;0.8;1" dur="3s" repeatCount="indefinite"  /> 
+            </stop>
+        </linearGradient>
+          </defs>
+          <path id="Color_Fill_1" data-name="Color Fill 1" class="cls-1" fill="url(#linear-gradient)" d="M1731,556c105.48-1.1,142.52,44.035,161,129,9.88,45.4-40.74,167.359-57,205q-81.99,256.98-164,514Q1275.54,2603.385,880,3803c-82.13,268.33-124.285,511.57-369,624-36.089,16.58-95.425,25.61-136,10-83.342-32.05-107.542-131.74-72-233l240-727q338.966-1023.9,678-2048,69-208.98,138-418c54.76-154.339,86.6-280.575,197-376,30.54-26.4,70.46-47.293,110-64Q1698.49,563.5,1731,556Zm162,302q12,974.4,24,1949,288.465-677.925,577-1356c51.82-126.88,98.61-265.3,250-294,42.42-8.04,83.06,1.95,108,27,14.99,15.06,29.19,51.86,22,87q-111.99,272.97-224,546-338.46,798.915-677,1598c-85.14,151.12-88.7,284.16-261,357-38.09,16.1-87.45,27.78-133,14-30.72-9.3-54.46-36.17-67-64-18.55-41.15-10.04-131.43-10-176q-2.505-229.47-5-459-6-472.95-12-946Q1688.985,1499.57,1893,858Zm985,503q22.005,513.945,44,1028h1q152.49-412.455,305-825c24.09-54.24,121.34-193.38,211-128,63.31,46.16-70.43,332.11-96,404q-182.985,491.445-366,983c-40.78,103.93-94.1,287.9-242,275-33.89-2.96-56.61-18.56-70-42-16.58-29.03-6.14-74.73-11-115q-7.005-169.485-14-339-12.495-293.475-25-587Q2746.49,1688.03,2878,1361Zm1068,189c91.15,7.4,16.84,175.46-6,229q-102.99,311.475-206,623c-24.38,71.16-63.12,197.31-166,182-60.99-9.07-87.68-204.42-106-268q-53.49-196.485-107-393,64.5-180.48,129-361,85.485,319.47,171,639l1,1q97.485-293.97,195-588C3870.57,1579.65,3902.16,1561,3946,1550Zm67,85q96.99,220.485,194,441,219.48-157.98,439-316c-46.82,53.74-461.75,443.74-502,449-39.32,5.14-69.85-106.68-83-134q-54-120.99-108-242Q3983,1734.015,4013,1635Zm633,123h0Z" transform="translate(-287.125 -556)" />
+        </svg>          
         </div>
       </div>
    ) : (<div></div>)
