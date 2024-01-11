@@ -11,10 +11,10 @@ export default function LoadingAnimation(props) {
           <defs>
             <linearGradient id="linear-gradient" x1="-100%" y1="0" x2="200%" y2="0" >
             <stop offset="0" stop-color={color}>
-               <animate attributeName="offset" values="0;0.2;0.5; 1" dur="3s" repeatCount="indefinite"  /> 
+               <animate attributeName="offset" values="0;0.2;0.5; 1;.5;.2;0" dur="3s" repeatCount="indefinite"  /> 
             </stop>
             <stop offset="0.5" stop-opacity="0">
-                <animate attributeName="offset" values="0.5;0.7;0.8;1" dur="3s" repeatCount="indefinite"  /> 
+                <animate attributeName="offset" values="0.5;0.7;0.8;1; .8;.7;.5" dur="3s" repeatCount="indefinite"  /> 
             </stop>
         </linearGradient>
           </defs>
