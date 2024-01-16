@@ -23,6 +23,7 @@ import LoadingAnimation from './Animation/LoadingAnimation';
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import LemonMilk from "./lemonmilk.ttf";
 import CssBaseline from "@mui/material/CssBaseline";
+import Tooltip from '@mui/material/Tooltip';
 
 //Creating MUI theme to go across all components
 const theme = createTheme({
@@ -96,7 +97,7 @@ export default function App() {
   }, [])
 
 
-//navigation menu (only for smaller windows)
+  //navigation menu (only for smaller windows)
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
@@ -211,10 +212,48 @@ export default function App() {
 
 
                 </Box>
-
-                <IconButton component={Link} to='https://github.com/Matt-Mills98' sx={{ color: accents[accent], transition: '.3s', ":hover": { color: 'white' } }}><GitHubIcon fontSize='large' /></IconButton>
-                <IconButton component={Link} to='https://www.linkedin.com/in/matt-mills-633b00214/' sx={{ color: accents[accent], transition: '.3s', ":hover": { color: 'white' } }}><LinkedInIcon fontSize='large' /></IconButton>
-                <IconButton href={'mailto:mattmills32013@gmail.com'} sx={{ color: accents[accent], transition: '.3s', ":hover": { color: 'white' } }}><EmailIcon fontSize='large' /></IconButton>
+                <Tooltip title="GitHub" placement="top" arrow componentsProps={{
+                  tooltip: {
+                    sx: {
+                      fontFamily:'"Segoe UI"',
+                      fontSize:'.9em',
+                      bgcolor: accents[accent],
+                      '& .MuiTooltip-arrow': {
+                        color: accents[accent],
+                      },
+                    },
+                  },
+                }}>
+                  <IconButton component={Link} to='https://github.com/Matt-Mills98' sx={{ color: accents[accent], transition: '.3s', ":hover": { color: 'white' } }}><GitHubIcon fontSize='large' /></IconButton>
+                </Tooltip>
+                <Tooltip title="LinkedIn" placement="top" arrow componentsProps={{
+                  tooltip: {
+                    sx: {
+                      fontFamily:'"Segoe UI"',
+                      fontSize:'.9em',
+                      bgcolor: accents[accent],
+                      '& .MuiTooltip-arrow': {
+                        color: accents[accent],
+                      },
+                    },
+                  },
+                }}>
+                  <IconButton component={Link} to='https://www.linkedin.com/in/matt-mills-633b00214/' sx={{ color: accents[accent], transition: '.3s', ":hover": { color: 'white' } }}><LinkedInIcon fontSize='large' /></IconButton>
+                </Tooltip>
+                <Tooltip title="Contact Me" placement="top" arrow componentsProps={{
+                  tooltip: {
+                    sx: {
+                      fontFamily:'"Segoe UI"',
+                      fontSize:'.9em',
+                      bgcolor: accents[accent],
+                      '& .MuiTooltip-arrow': {
+                        color: accents[accent],
+                      },
+                    },
+                  },
+                }}>
+                  <IconButton href={'mailto:mattmills32013@gmail.com'} sx={{ color: accents[accent], transition: '.3s', ":hover": { color: 'white' } }}><EmailIcon fontSize='large' /></IconButton>
+                </Tooltip>
               </Toolbar>
             </Container>
 
