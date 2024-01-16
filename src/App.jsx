@@ -217,6 +217,7 @@ export default function App() {
                     sx: {
                       fontFamily:'"Segoe UI"',
                       fontSize:'.9em',
+                      color:'black',
                       bgcolor: accents[accent],
                       '& .MuiTooltip-arrow': {
                         color: accents[accent],
@@ -231,6 +232,7 @@ export default function App() {
                     sx: {
                       fontFamily:'"Segoe UI"',
                       fontSize:'.9em',
+                      color:'black',
                       bgcolor: accents[accent],
                       '& .MuiTooltip-arrow': {
                         color: accents[accent],
@@ -245,6 +247,7 @@ export default function App() {
                     sx: {
                       fontFamily:'"Segoe UI"',
                       fontSize:'.9em',
+                      color:'black',
                       bgcolor: accents[accent],
                       '& .MuiTooltip-arrow': {
                         color: accents[accent],
