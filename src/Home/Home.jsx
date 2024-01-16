@@ -46,7 +46,7 @@ export default function Home(props) {
                     <Box sx={{
                         fontFamily: 'sans-serif',
                     }}>
-                        <Typography variant='h1' sx={{
+                        <Typography variant={{xs:'h4',lg:'h4', xl:'h1'}} sx={{
                             color: 'white'
                         }}>Matt Mills</Typography>
 
