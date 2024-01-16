@@ -1,8 +1,6 @@
-import { Card, Typography, Box, Fade } from '@mui/material';
+import { Typography, Box, Fade } from '@mui/material';
 import React from 'react'
-import { createTheme, ThemeProvider } from "@mui/material/styles";
-import CssBaseline from "@mui/material/CssBaseline";
-import InspirationTTF from "./lemonmilk.ttf";
+
 
 export default function Awards(props) {
     const { color, setValue, setFilter, setAccent } = props
@@ -16,36 +14,16 @@ export default function Awards(props) {
     const updateLoaded = () => {
         setLoaded(true);
     }
-    const [anchorElNav, setAnchorElNav] = React.useState(null);
-    const handleOpenNavMenu = (event) => {
-        setAnchorElNav(event.currentTarget);
-    };
-    const theme = createTheme({
-        typography: {
-            fontFamily: "Inspiration"
-        },
-        components: {
-            MuiCssBaseline: {
-                styleOverrides: {
-                    "@font-face": {
-                        fontFamily: "Inspiration",
-                        src: `url(${InspirationTTF}) format("truetype")`
-                    },
-
-                }
-            }
-        }
-    });
+   
+   
 
     return (
         <Box sx={{bgcolor:'transparent', position: 'absolute', top:'100px', left:'40px' }}>
-            <ThemeProvider theme={theme}>
-                <CssBaseline />
                 <Fade in={loaded}>
 
                     <Box mb={2} sx={{margin:'10px'}}>
 
-                        <Typography variant='h2' sx={{
+                        <Typography variant='h2' sx={{fontSize: {xs:'3em',md:'4em', xl:'5em'},
                             color: 'white'
                         }}>Awards</Typography>
                         <Box m={1} my={2}>
@@ -62,7 +40,6 @@ export default function Awards(props) {
                         </Box>
                     </Box>
                 </Fade>
-            </ThemeProvider>
         </Box>
     );
 }

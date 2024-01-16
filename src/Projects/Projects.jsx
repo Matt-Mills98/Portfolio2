@@ -1,8 +1,6 @@
-import { Card, Typography, Box, Fade, IconButton } from '@mui/material';
+import {  Typography, Box, Fade, IconButton } from '@mui/material';
 import React from 'react'
-import { createTheme, ThemeProvider } from "@mui/material/styles";
-import CssBaseline from "@mui/material/CssBaseline";
-import InspirationTTF from "./lemonmilk.ttf";
+
 import Stack from '@mui/material/Stack';
 import ProjectDialog from './ProjectDialog';
 
@@ -113,7 +111,6 @@ export default function Home(props) {
 
     const [loaded, setLoaded] = React.useState(false);
     const [open, setOpen] = React.useState(false);
-    const [anchorElNav, setAnchorElNav] = React.useState(null);
     const [selectedImages, setSelectedImages] = React.useState([]);
     const [logo, setLogo] = React.useState('');
     const [link, setLink] = React.useState('');
@@ -130,25 +127,7 @@ export default function Home(props) {
     const updateLoaded = () => {
         setLoaded(true);
     }
-    const handleOpenNavMenu = (event) => {
-        setAnchorElNav(event.currentTarget);
-    };
-    const theme = createTheme({
-        typography: {
-            fontFamily: "Inspiration"
-        },
-        components: {
-            MuiCssBaseline: {
-                styleOverrides: {
-                    "@font-face": {
-                        fontFamily: "Inspiration",
-                        src: `url(${InspirationTTF}) format("truetype")`
-                    },
-
-                }
-            }
-        }
-    });
+ 
     const handleClickOpen = (images) => {
         setOpen(true);
         if (images == 'echoes') {
@@ -185,12 +164,11 @@ export default function Home(props) {
 
     return (
         <Box sx={{ bgcolor:'transparent', position: 'absolute', top:'100px', left:'40px' }}>
-            <ThemeProvider theme={theme}>
-                <CssBaseline />
+            
                 <Fade in={loaded}>
                     <Box sx={{margin:'10px'}}>
 
-                        <Typography variant='h2' sx={{
+                        <Typography variant='h2' sx={{fontSize: {xs:'3em',md:'4em', xl:'5em'},
                             color: 'white'
                         }}>Projects</Typography>
 
@@ -262,7 +240,6 @@ export default function Home(props) {
                     </Box>
                 </Fade>
                 <ProjectDialog open={open} onClose={handleClose} color={color} itemData={selectedImages} link={link} logo={logo} title = {title} introText={introText}></ProjectDialog>
-            </ThemeProvider>
         </Box>
     );
 }

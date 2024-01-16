@@ -1,9 +1,7 @@
-import { Card, Typography, Box, Fade, } from '@mui/material';
+import { Typography, Box, Fade, } from '@mui/material';
 import React from 'react'
-import { createTheme, ThemeProvider } from "@mui/material/styles";
-import CssBaseline from "@mui/material/CssBaseline";
-import InspirationTTF from "./lemonmilk.ttf";
 import Tooltip from '@mui/material/Tooltip';
+
 
 export default function Home(props) {
     const { color, setValue, setFilter, setAccent } = props
@@ -21,32 +19,15 @@ export default function Home(props) {
     const handleOpenNavMenu = (event) => {
         setAnchorElNav(event.currentTarget);
     };
-    const theme = createTheme({
-        typography: {
-            fontFamily: "Inspiration"
-        },
-        components: {
-            MuiCssBaseline: {
-                styleOverrides: {
-                    "@font-face": {
-                        fontFamily: "Inspiration",
-                        src: `url(${InspirationTTF}) format("truetype")`
-                    },
-
-                }
-            }
-        }
-    });
+   
 
     return (
         <Box sx={{ bgcolor: 'transparent', position: 'absolute', top: '50%', left: '30px', transform: 'translateY(-50%)' }}>
-            <ThemeProvider theme={theme}>
-                <CssBaseline />
                 <Fade in={loaded}>
                     <Box sx={{
                         fontFamily: 'sans-serif',
                     }}>
-                        <Typography variant={{xs:'h4',lg:'h4', xl:'h1'}} sx={{
+                        <Typography variant='h1' sx={{ fontSize: {xs:'4em',md:'5em', xl:'6em'},
                             color: 'white'
                         }}>Matt Mills</Typography>
 
@@ -343,7 +324,6 @@ export default function Home(props) {
 
                 </Fade>
 
-            </ThemeProvider>
         </Box >
     );
 }

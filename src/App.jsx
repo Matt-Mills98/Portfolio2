@@ -20,7 +20,26 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import LoadingAnimation from './Animation/LoadingAnimation';
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import LemonMilk from "./lemonmilk.ttf";
+import CssBaseline from "@mui/material/CssBaseline";
 
+const theme = createTheme({
+  typography: {
+      fontFamily: "LemonMilk"
+  },
+  components: {
+      MuiCssBaseline: {
+          styleOverrides: {
+              "@font-face": {
+                  fontFamily: "LemonMilk",
+                  src: `url(${LemonMilk}) format("truetype")`
+              },
+
+          }
+      }
+  }
+});
 
 const accents = ['#b700ff', '#08f3ff', '#ffea00', '#09ff00', '#ff5500']
 const shuffle = (accent = 0) => [
@@ -72,6 +91,7 @@ export default function App() {
     handleLoading();
   }, [])
 
+  
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -95,7 +115,7 @@ export default function App() {
       <BrowserRouter>
 
         <Box sx={{ bgcolor: ' #0f0f0f' }}>
-          {screenSize.width>500 && !loaded &&
+          {screenSize.width > 500 && !loaded &&
             <LoadingAnimation color={accents[accent]} loaded={loaded}></LoadingAnimation>
           }
 
@@ -202,17 +222,20 @@ export default function App() {
               <Animation shuffle={shuffle} accents={accents} accent={accent} width={screenSize.width} />
             </Box>
             <Outlet />
-            <Routes>
+            <ThemeProvider theme={theme}>
+            <CssBaseline />
 
-              <Route index element={<Box sx={{ margin: 1, userSelect: 'none', '-webkit-touch-callout': 'none' }}><Home color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></Home></Box>}></Route>
-              <Route path="About" element={<Box sx={{ margin: 1, userSelect: 'none', '-webkit-touch-callout': 'none' }}><About color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></About></Box>}></Route>
-              <Route path="Awards" element={<Box sx={{ margin: 1, userSelect: 'none', '-webkit-touch-callout': 'none' }}><Awards color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></Awards></Box>}></Route>
-              <Route path="Experience" element={<Box sx={{ margin: 1, userSelect: 'none', '-webkit-touch-callout': 'none' }}><Experience color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></Experience></Box>}></Route>
-              <Route path="Projects" element={<Box sx={{ margin: 1, userSelect: 'none', '-webkit-touch-callout': 'none' }}><Projects color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></Projects></Box>}></Route>
+              <Routes>
 
-            </Routes>
+                <Route index element={<Box sx={{ margin: 1, userSelect: 'none', '-webkit-touch-callout': 'none' }}><Home color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></Home></Box>}></Route>
+                <Route path="About" element={<Box sx={{ margin: 1, userSelect: 'none', '-webkit-touch-callout': 'none' }}><About color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></About></Box>}></Route>
+                <Route path="Awards" element={<Box sx={{ margin: 1, userSelect: 'none', '-webkit-touch-callout': 'none' }}><Awards color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></Awards></Box>}></Route>
+                <Route path="Experience" element={<Box sx={{ margin: 1, userSelect: 'none', '-webkit-touch-callout': 'none' }}><Experience color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></Experience></Box>}></Route>
+                <Route path="Projects" element={<Box sx={{ margin: 1, userSelect: 'none', '-webkit-touch-callout': 'none' }}><Projects color={accents[accent]} setValue={setValue} setFilter={setFilter} setAccent={click}></Projects></Box>}></Route>
 
+              </Routes>
 
+            </ThemeProvider>
 
           </Box>
         </Box>

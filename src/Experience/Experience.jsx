@@ -1,13 +1,10 @@
-import { Card, Typography, Box, Fade, Stack } from '@mui/material';
+import { Typography, Box, Fade, Stack } from '@mui/material';
 import React from 'react'
-import { createTheme, ThemeProvider } from "@mui/material/styles";
-import CssBaseline from "@mui/material/CssBaseline";
-import InspirationTTF from "./lemonmilk.ttf";
+
 
 export default function Awards(props) {
     const { color, setValue, setFilter, setAccent } = props
     const [loaded, setLoaded] = React.useState(false);
-    const [anchorElNav, setAnchorElNav] = React.useState(null);
 
     React.useEffect(() => {
         updateLoaded(); setValue(2); setAccent(3); setFilter('none');
@@ -18,38 +15,14 @@ export default function Awards(props) {
     const updateLoaded = () => {
         setLoaded(true);
     }
-    const handleOpenNavMenu = (event) => {
-        setAnchorElNav(event.currentTarget);
-    };
-    const theme = createTheme({
-        typography: {
-            fontFamily: "Inspiration"
-        },
-        components: {
-            MuiCssBaseline: {
-                styleOverrides: {
-                    "@font-face": {
-                        fontFamily: "Inspiration",
-                        src: `url(${InspirationTTF}) format("truetype")`
-                    },
-
-                }
-            }
-        }
-    });
-
-    const handleCloseNavMenu = () => {
-        setAnchorElNav(null);
-    };
+   
     return (
         <Box sx={{ bgcolor:'transparent', position: 'absolute', top:'100px', left:'40px' }}>
-            <ThemeProvider theme={theme}>
-                <CssBaseline />
                 <Fade in={loaded}>
                     <Stack direction="column" justifyContent="center">
 
                         <Box sx={{margin:'10px'}}>
-                            <Typography variant='h2' sx={{
+                            <Typography variant='h2' sx={{fontSize: {xs:'3em',md:'4em', xl:'5em'},
                                 color: 'white'
                             }}>Experience</Typography>
                             <Box m={1} my={2}>
@@ -89,7 +62,6 @@ export default function Awards(props) {
                     </Stack>
 
                 </Fade>
-            </ThemeProvider>
         </Box>
     );
 }
