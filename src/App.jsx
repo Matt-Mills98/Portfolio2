@@ -199,7 +199,6 @@ export default function App() {
             <Box sx={{
               position: 'fixed', top: 0, width: '99.3vw', height: '100vh', zIndex: 0, visibility: { xs: 'collapse', sm: 'visible' }
             }}>
-              <Animation shuffle={shuffle} accents={accents} accent={accent} width={screenSize.width} />
             </Box>
             <Outlet />
             <Routes>
