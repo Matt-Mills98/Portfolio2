@@ -1,8 +1,10 @@
 import { Typography, Box, Fade, Stack } from '@mui/material';
 import React from 'react'
 
-
-export default function Awards(props) {
+//Experience page contents. Most of these similar page components can be made more modular, but for the sake of a personal 
+//project and potential customizability (I'm likely to change these in the future), 
+//I am keeping these as individual components. If this were a prod environment, I would have these as a singular component for the purpose of readability and easier changes. 
+export default function Experience(props) {
     const { color, setValue, setFilter, setAccent } = props
     const [loaded, setLoaded] = React.useState(false);
 

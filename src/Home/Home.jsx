@@ -2,11 +2,10 @@ import { Typography, Box, Fade, } from '@mui/material';
 import React from 'react'
 import Tooltip from '@mui/material/Tooltip';
 
-
+//Home page contents. This page displays name and a list of my stack.
 export default function Home(props) {
     const { color, setValue, setFilter, setAccent } = props
     const [loaded, setLoaded] = React.useState(false);
-
     React.useEffect(() => {
         updateLoaded(); setValue(-1); setAccent(0); setFilter('invert(90%) sepia(74%) saturate(7174%) hue-rotate(280deg) brightness(104%) contrast(123%)');
         window.document.title = 'Matt Mills | Home';
@@ -15,12 +14,6 @@ export default function Home(props) {
     const updateLoaded = () => {
         setLoaded(true);
     }
-    const [anchorElNav, setAnchorElNav] = React.useState(null);
-    const handleOpenNavMenu = (event) => {
-        setAnchorElNav(event.currentTarget);
-    };
-   
-
     return (
         <Box sx={{ bgcolor: 'transparent', position: 'absolute', top: '50%', left: '30px', transform: 'translateY(-50%)' }}>
                 <Fade in={loaded}>

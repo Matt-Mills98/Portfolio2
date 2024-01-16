@@ -10,9 +10,10 @@ import { EffectComposer, N8AO } from '@react-three/postprocessing'
 import { easing } from 'maath'
 
 
-
+//3D Loading animation. This is my first time utilizing 3js. Without this called, the page speed according to PageSpeed Insights is rated a 99. Will likely give an option for users in the future
+//whether they want to have it loaded.
 export default function Scene(props) {
-  const {accents, shuffle, accent, width } = props;
+  const { shuffle, accent, width } = props;
   
 
   const connectors = useMemo(() => shuffle(accent), [accent])

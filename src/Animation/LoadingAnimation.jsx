@@ -1,12 +1,12 @@
 import './LoadingAnimation.css'
+
+//Loading animation which loads for about 3 seconds at the start of the webpage. I am likely to improve on this in the future.
 export default function LoadingAnimation(props) {
   const { color, loaded } = props;
 
   return !loaded ? (
       <div class="loader">
         <div class="loader-inner">
-          
-
           <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 4358.875 3889.09" className='image'>
           <defs>
             <linearGradient id="linear-gradient" x1="-100%" y1="0" x2="200%" y2="0" >

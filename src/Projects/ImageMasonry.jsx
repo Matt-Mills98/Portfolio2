@@ -4,7 +4,8 @@ import Masonry from '@mui/lab/Masonry';
 import { Typography } from '@mui/material';
 
 
-
+//Displays project images. I am likely to improve the look and feel of this in the future, or at least show a skeleton 
+//before the images load so that the format doesn't jump. 
 export default function ImageMasonry(props) {
 
     const { color, itemData } = props
@@ -30,7 +31,7 @@ export default function ImageMasonry(props) {
                                 srcSet={`${item.img}?w=162&auto=format&dpr=2 2x`}
                                 src={`${item.img}?w=162&auto=format`}
                                 alt={item.title}
-
+                                loading="lazy"
                                 style={{
                                     borderBottomLeftRadius: 4,
                                     borderBottomRightRadius: 4,

@@ -24,24 +24,26 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import LemonMilk from "./lemonmilk.ttf";
 import CssBaseline from "@mui/material/CssBaseline";
 
+//Creating MUI theme to go across all components
 const theme = createTheme({
   typography: {
-      fontFamily: "LemonMilk"
+    fontFamily: "LemonMilk"
   },
   components: {
-      MuiCssBaseline: {
-          styleOverrides: {
-              "@font-face": {
-                  fontFamily: "LemonMilk",
-                  src: `url(${LemonMilk}) format("truetype")`
-              },
+    MuiCssBaseline: {
+      styleOverrides: {
+        "@font-face": {
+          fontFamily: "LemonMilk",
+          src: `url(${LemonMilk}) format("truetype")`
+        },
 
-          }
       }
+    }
   }
 });
-
+//Arr that holds color values for each page of the website
 const accents = ['#b700ff', '#08f3ff', '#ffea00', '#09ff00', '#ff5500']
+//3D object details held here. This is used in Animation/Animation.jsx. Each represents a loaded 3d object.
 const shuffle = (accent = 0) => [
   { color: '#444', roughness: 0.1 },
   { color: '#444', roughness: 0.75 },
@@ -53,7 +55,7 @@ const shuffle = (accent = 0) => [
   { color: accents[accent], roughness: 0.75, accent: true },
   { color: accents[accent], roughness: 0.1, accent: true }
 ]
-
+//gets dimensions of current window
 function getCurrentDimension() {
   return {
     width: window.innerWidth,
@@ -69,30 +71,32 @@ export default function App() {
   const [loaded, setLoaded] = React.useState(false);
   const [screenSize, setScreenSize] = React.useState(getCurrentDimension());
 
+  //Forced page delay for loading screen. This is not something I would do in a production environment, I figured it'd be fun here though. 
   const delay = ms => new Promise(res => setTimeout(res, ms));
 
   const handleLoading = async () => {
     await delay(4000);
     setLoaded(true);
   }
+
+  //checks for changes in screen size for responsive purposes
   React.useEffect(() => {
     const updateDimension = () => {
       setScreenSize(getCurrentDimension())
     }
     window.addEventListener('resize', updateDimension);
-
-
     return (() => {
       window.removeEventListener('resize', updateDimension);
     })
   }, [screenSize])
 
+  //forced loading onmount
   React.useEffect(() => {
     handleLoading();
   }, [])
 
-  
 
+//navigation menu (only for smaller windows)
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
@@ -105,7 +109,7 @@ export default function App() {
   };
 
 
-  const handleChange = (event, newValue) => {
+  const handleChange = (newValue) => {
     setValue(newValue);
   };
 
@@ -223,7 +227,7 @@ export default function App() {
             </Box>
             <Outlet />
             <ThemeProvider theme={theme}>
-            <CssBaseline />
+              <CssBaseline />
 
               <Routes>
 

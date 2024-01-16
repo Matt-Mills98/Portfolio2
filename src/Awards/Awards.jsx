@@ -1,7 +1,9 @@
 import { Typography, Box, Fade } from '@mui/material';
 import React from 'react'
 
-
+//About page contents. Most of these similar page components can be made more modular, but for the sake of a personal 
+//project and potential customizability (I'm likely to change these in the future), 
+//I am keeping these as individual components. If this were a prod environment, I would have these as a singular component for the purpose of readability and easier changes. 
 export default function Awards(props) {
     const { color, setValue, setFilter, setAccent } = props
     const [loaded, setLoaded] = React.useState(false);
@@ -15,8 +17,6 @@ export default function Awards(props) {
         setLoaded(true);
     }
    
-   
-
     return (
         <Box sx={{bgcolor:'transparent', position: 'absolute', top:'100px', left:'40px' }}>
                 <Fade in={loaded}>
