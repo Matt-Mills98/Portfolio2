@@ -1,6 +1,6 @@
 
 # Matt Mills Porfolio
-<img src="https://m-mills.com/MMillsLogoWhite.svg" alt="drawing" style="width:200px;"/>
+<img src="https://m-mills.com/mmlogowhite.svg" alt="drawing" style="width:200px;"/>
 A React.js web application built to display information regarding Full Stack Developer Matt Mills.
 
 
