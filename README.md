@@ -29,6 +29,10 @@ Using GTMetrix, these were tested. Due to Three.js being a bit CPU-heavy, the pe
 - Projects
 
     This goes a bit into detail about other projects I have recently worked on.
+  
+## Screenshots
+
+![App Screenshot](https://m-mills.com/PortfolioHome.png)
 
 ## Contact
 
