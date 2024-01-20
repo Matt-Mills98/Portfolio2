@@ -1,11 +1,11 @@
 
-# Matt Mills Porfolio
+# Matt Mills Portfolio
 <img src="https://m-mills.com/mmlogowhite.svg" alt="drawing" style="width:200px;"/>
 A React.js web application built to display information regarding Full Stack Developer Matt Mills.
 
-
-
 ## About
+
+Matt Mills Portfolio Website. React.js front end, fully responsive design that works with all screen sizes. Utilized Three.js and Blender to create smooth background animations to improve design.
 
 #### Animations
 
@@ -14,7 +14,6 @@ This web app uses Three.js to display background animations. The simple models u
 #### Performance and Accessibility
 
 Using GTMetrix, these were tested. Due to Three.js being a bit CPU-heavy, the performance is not great for lower-end tech. When animations were not rendered, both Perfomance and Accessibility achieved very high scores (both between 95-100)
-
 
 ## Pages
 
@@ -30,3 +29,7 @@ Using GTMetrix, these were tested. Due to Three.js being a bit CPU-heavy, the pe
 - Projects
 
     This goes a bit into detail about other projects I have recently worked on.
+
+## Contact
+
+If you have any feedback, please reach out to me at [mattmills32013@gmail.com](mailto:mattmills32013@gmail.com)
