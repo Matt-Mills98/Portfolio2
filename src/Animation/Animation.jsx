@@ -87,12 +87,12 @@ function Pointer({ vec = new THREE.Vector3() }) {
 
 function Model({ children, color = 'white', roughness = 0, ...props }) {
   const ref = useRef()
-  const { nodes, materials } = useGLTF('/box.glb')
+  const { nodes, materials } = useGLTF('/logo.glb')
   useFrame((state, delta) => {
     easing.dampC(ref.current.material.color, color, 0.2, delta)
   })
   return (
-    <mesh ref={ref} castShadow receiveShadow scale={2}  geometry={nodes.Color_Fill_3.geometry}>
+    <mesh ref={ref} castShadow receiveShadow scale={2}  geometry={nodes.Logo.geometry}>
       <meshStandardMaterial metalness={0.2} roughness={roughness} material={materials.SVGMat} />
       {children}
     </mesh>
