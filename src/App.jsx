@@ -24,7 +24,8 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import LemonMilk from "./lemonmilk.ttf";
 import CssBaseline from "@mui/material/CssBaseline";
 import Tooltip from '@mui/material/Tooltip';
-
+import myFile from '../src/assets/MMills_Resume_2024.pdf'
+import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 //Creating MUI theme to go across all components
 const theme = createTheme({
   typography: {
@@ -256,6 +257,21 @@ export default function App() {
                   },
                 }}>
                   <IconButton href={'mailto:mattmills32013@gmail.com'} sx={{ color: accents[accent], transition: '.3s', ":hover": { color: 'white' } }}><EmailIcon fontSize='large' /></IconButton>
+                </Tooltip>
+                <Tooltip title="Resume" placement="top" arrow componentsProps={{
+                  tooltip: {
+                    sx: {
+                      fontFamily: '"Segoe UI"',
+                      fontSize: '.9em',
+                      color: 'black',
+                      bgcolor: accents[accent],
+                      '& .MuiTooltip-arrow': {
+                        color: accents[accent],
+                      },
+                    },
+                  },
+                }}>
+                  <IconButton href={myFile} sx={{ color: accents[accent], transition: '.3s', ":hover": { color: 'white' } }}><PictureAsPdfIcon fontSize='large' /></IconButton>
                 </Tooltip>
               </Toolbar>
             </Container>
