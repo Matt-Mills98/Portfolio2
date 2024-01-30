@@ -32,8 +32,9 @@ export default function About(props) {
                     }}>About</Typography>
                     <Box m={1} my={2}>
                         <Typography variant='body1' sx={{ maxWidth: '50vh', color: '#CCCCCC', fontFamily: 'sans-serif' }}>Hi. I'm Matt, a software developer currently based in New Jersey, about 30 minutes outside of Philly. Listed below are some brief details about me to help you get to know me better. </Typography>
+                        <Typography variant='h6' sx={{ color: color, fontFamily: 'sans-serif' }}>Education</Typography>
+
                         <Box m={1} maxWidth={'50vh'}>
-                            <Typography variant='h6' sx={{ color: color, fontFamily: 'sans-serif' }}>Education</Typography>
                             <Box m={1} maxWidth={'50vh'}>
                                 <Typography variant='body1' sx={{ fontSize: { xs: '.9em', sm: '1em', xl: '1em' }, color: '#CCCCCC', fontFamily: 'sans-serif' }}>I graduated from the University of Scranton in May of 2021 with a BS in Information Technology. </Typography>
                             </Box>
