@@ -43,7 +43,7 @@ export default function About(props) {
                             </Box>
                         </Box>
                         <Typography variant='h6' sx={{ color: color, fontFamily: 'sans-serif' }}>Interests</Typography>
-                        <Box m={1} maxWidth={'50vh'}>
+                        <Box m={1} mb={'50px'} maxWidth={'50vh'}>
                             <Typography variant='body1' sx={{ color: '#FFFFFF', fontFamily: 'sans-serif' }}>Some of my interests outside of coding include exercise, reading, tech, graphic design, and video games.
                             </Typography>
                             <Box m={1} maxWidth={'50vh'}>
