@@ -19,7 +19,6 @@ export default function Experience(props) {
     }
 
     return (
-        <Box sx={{ background: 'linear-gradient(90deg, rgba(15,15,15,1) 0%, rgba(15,15,15,.75) 47%, rgba(15,15,15,0) 100%);', position: 'absolute', top: '0px', left: '0px', height: '100vh', width: '50vw' }}>
 
             <Box sx={{ bgcolor: 'transparent', position: 'absolute', top: '100px', left: '40px' }}>
                 <Fade in={loaded}>
@@ -33,33 +32,33 @@ export default function Experience(props) {
                             <Box m={1} my={2}>
                                 <Typography variant='h6' sx={{ color: color, fontFamily: 'sans-serif' }}>CobbleStone Software</Typography>
                                 <Box m={1} maxWidth={'50vh'} mb={2}>
-                                    <Typography variant='body1' sx={{ color: '#CCCCCC', fontFamily: 'sans-serif' }}>August 2021 - Current</Typography>
+                                    <Typography variant='body1' sx={{ color: '#FFFFFF', fontFamily: 'sans-serif' }}>August 2021 - Current</Typography>
                                     <Box m={1} maxWidth={'50vh'}>
-                                        <Typography variant='body4' sx={{ fontSize: { xs: '.9em', sm: '1em', xl: '1em' }, color: '#999999', fontFamily: 'sans-serif' }}>Independently developed a React.js Word Add-In for integration with CobbleStone’s Contract Management Software (Contract Insight) using a REST API.</Typography>
+                                        <Typography variant='body4' sx={{ fontSize: { xs: '.9em', sm: '1em', xl: '1em' }, color: '#CCCCCC', fontFamily: 'sans-serif' }}>Independently developed a React.js Word Add-In for integration with CobbleStone’s Contract Management Software (Contract Insight) using a REST API.</Typography>
                                     </Box>
                                     <Box m={1} maxWidth={'50vh'}>
-                                        <Typography variant='body4' sx={{ fontSize: { xs: '.9em', sm: '1em', xl: '1em' }, color: '#999999', fontFamily: 'sans-serif' }}>Updated a Legacy C# VSTO Plugin to run without the usage of local software, instead completely reliant on a REST API.</Typography>
+                                        <Typography variant='body4' sx={{ fontSize: { xs: '.9em', sm: '1em', xl: '1em' }, color: '#CCCCCC', fontFamily: 'sans-serif' }}>Updated a Legacy C# VSTO Plugin to run without the usage of local software, instead completely reliant on a REST API.</Typography>
                                     </Box>
                                     <Box m={1} maxWidth={'50vh'}>
-                                        <Typography variant='body4' sx={{ fontSize: { xs: '.9em', sm: '1em', xl: '1em' }, color: '#999999', fontFamily: 'sans-serif' }}>Utilized Microsoft Graph API to allow clients to save files directly into their OneDrive using Contract Insight using ASP.NET. Utilized an OAuth 2.0 flow for retrieving/maintaining access tokens.</Typography>
+                                        <Typography variant='body4' sx={{ fontSize: { xs: '.9em', sm: '1em', xl: '1em' }, color: '#CCCCCC', fontFamily: 'sans-serif' }}>Utilized Microsoft Graph API to allow clients to save files directly into their OneDrive using Contract Insight using ASP.NET. Utilized an OAuth 2.0 flow for retrieving/maintaining access tokens.</Typography>
                                     </Box>
                                     <Box m={1} maxWidth={'50vh'}>
-                                        <Typography variant='body4' sx={{ fontSize: { xs: '.9em', sm: '1em', xl: '1em' }, color: '#999999', fontFamily: 'sans-serif' }}>Completed numerous bug fixes.</Typography>
+                                        <Typography variant='body4' sx={{ fontSize: { xs: '.9em', sm: '1em', xl: '1em' }, color: '#CCCCCC', fontFamily: 'sans-serif' }}>Completed numerous bug fixes.</Typography>
                                     </Box>
                                     <Box m={1} maxWidth={'50vh'}>
-                                        <Typography variant='body4' sx={{ fontSize: { xs: '.9em', sm: '1em', xl: '1em' }, color: '#999999', fontFamily: 'sans-serif' }}>Demonstrated projects both asynchronously and synchronously to CEO, CIO, CFO, and several others.</Typography>
+                                        <Typography variant='body4' sx={{ fontSize: { xs: '.9em', sm: '1em', xl: '1em' }, color: '#CCCCCC', fontFamily: 'sans-serif' }}>Demonstrated projects both asynchronously and synchronously to CEO, CIO, CFO, and several others.</Typography>
                                     </Box>
                                     <Box m={1} maxWidth={'50vh'}>
-                                        <Typography variant='body4' sx={{ fontSize: { xs: '.9em', sm: '1em', xl: '1em' }, color: '#999999', fontFamily: 'sans-serif' }}>Researched and defined requirements to meet use cases.</Typography>
+                                        <Typography variant='body4' sx={{ fontSize: { xs: '.9em', sm: '1em', xl: '1em' }, color: '#CCCCCC', fontFamily: 'sans-serif' }}>Researched and defined requirements to meet use cases.</Typography>
                                     </Box>
                                     <Box m={1} maxWidth={'50vh'}>
-                                        <Typography variant='body4' sx={{ fontSize: { xs: '.9em', sm: '1em', xl: '1em' }, color: '#999999', fontFamily: 'sans-serif' }}>Provided technical advice and mentorship for newer team members.</Typography>
+                                        <Typography variant='body4' sx={{ fontSize: { xs: '.9em', sm: '1em', xl: '1em' }, color: '#CCCCCC', fontFamily: 'sans-serif' }}>Provided technical advice and mentorship for newer team members.</Typography>
                                     </Box>
                                     <Box m={1} maxWidth={'50vh'}>
-                                        <Typography variant='body4' sx={{ fontSize: { xs: '.9em', sm: '1em', xl: '1em' }, color: '#999999', fontFamily: 'sans-serif' }}>Creation of 15+ complex MS SQL Server stored procedures and innumerable table modifications (T-SQL).</Typography>
+                                        <Typography variant='body4' sx={{ fontSize: { xs: '.9em', sm: '1em', xl: '1em' }, color: '#CCCCCC', fontFamily: 'sans-serif' }}>Creation of 15+ complex MS SQL Server stored procedures and innumerable table modifications (T-SQL).</Typography>
                                     </Box>
                                     <Box m={1} maxWidth={'50vh'}>
-                                        <Typography variant='body4' sx={{ fontSize: { xs: '.9em', sm: '1em', xl: '1em' }, color: '#999999', fontFamily: 'sans-serif' }}>Lead several client-facing meetings, including resolving bugs/configuration issues in deployed instances of Contract Insight.</Typography>
+                                        <Typography variant='body4' sx={{ fontSize: { xs: '.9em', sm: '1em', xl: '1em' }, color: '#CCCCCC', fontFamily: 'sans-serif' }}>Lead several client-facing meetings, including resolving bugs/configuration issues in deployed instances of Contract Insight.</Typography>
                                     </Box>
                                 </Box>
                             </Box>
@@ -68,6 +67,5 @@ export default function Experience(props) {
 
                 </Fade>
             </Box>
-        </Box>
     );
 }

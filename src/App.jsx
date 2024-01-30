@@ -215,9 +215,9 @@ export default function App() {
                 <Tooltip title="GitHub" placement="top" arrow componentsProps={{
                   tooltip: {
                     sx: {
-                      fontFamily:'"Segoe UI"',
-                      fontSize:'.9em',
-                      color:'black',
+                      fontFamily: '"Segoe UI"',
+                      fontSize: '.9em',
+                      color: 'black',
                       bgcolor: accents[accent],
                       '& .MuiTooltip-arrow': {
                         color: accents[accent],
@@ -230,9 +230,9 @@ export default function App() {
                 <Tooltip title="LinkedIn" placement="top" arrow componentsProps={{
                   tooltip: {
                     sx: {
-                      fontFamily:'"Segoe UI"',
-                      fontSize:'.9em',
-                      color:'black',
+                      fontFamily: '"Segoe UI"',
+                      fontSize: '.9em',
+                      color: 'black',
                       bgcolor: accents[accent],
                       '& .MuiTooltip-arrow': {
                         color: accents[accent],
@@ -245,9 +245,9 @@ export default function App() {
                 <Tooltip title="Contact Me" placement="top" arrow componentsProps={{
                   tooltip: {
                     sx: {
-                      fontFamily:'"Segoe UI"',
-                      fontSize:'.9em',
-                      color:'black',
+                      fontFamily: '"Segoe UI"',
+                      fontSize: '.9em',
+                      color: 'black',
                       bgcolor: accents[accent],
                       '& .MuiTooltip-arrow': {
                         color: accents[accent],
@@ -263,9 +263,11 @@ export default function App() {
           </AppBar>
           <Box>
             <Box sx={{
-              position: 'fixed', top: 0, width: '100vw', height: '100vh', zIndex: 0, visibility: {xs: 'collapse', sm: 'collapse', md: 'visible' }
+              position: 'fixed', top: 0, width: '100vw', height: '100vh', zIndex: 0, visibility: { xs: 'collapse', sm: 'collapse', md: 'visible' }
             }}>
               <Animation shuffle={shuffle} accents={accents} accent={accent} width={screenSize.width} />
+            </Box>
+            <Box sx={{ background: 'linear-gradient(90deg, rgba(15,15,15,1) 0%, rgba(15,15,15,.75) 47%, rgba(15,15,15,0) 100%);', position: 'fixed', top: '0px', left: '0px', minHeight: '100vh', width: '50vw' }}>
             </Box>
             <Outlet />
             <ThemeProvider theme={theme}>

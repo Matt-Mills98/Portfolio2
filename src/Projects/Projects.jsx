@@ -22,7 +22,6 @@ export default function Home(props) {
         setLoaded(true);
     }
     return (
-        <Box sx={{ background: 'linear-gradient(90deg, rgba(15,15,15,1) 0%, rgba(15,15,15,.75) 47%, rgba(15,15,15,0) 100%);', position: 'absolute', top: '0px', left: '0px', height: '100vh', width: '50vw' }}>
 
             <Box sx={{ bgcolor: 'transparent', position: 'absolute', top: '100px', left: '40px' }}>
                 <Fade in={loaded}>
@@ -38,7 +37,7 @@ export default function Home(props) {
                             <Box m={1} maxWidth={'50vh'}>
                                 <Typography variant='body1' sx={{ color: '#CCCCCC', fontFamily: 'sans-serif' }}>2023 - In Progress</Typography>
                                 <Box m={1} maxWidth={'50vh'}>
-                                    <Typography variant='body1' sx={{ fontSize: { xs: '.9em', sm: '1em', xl: '1em' }, color: '#999999', fontFamily: 'sans-serif' }}>Word Online Integration into CobbleStone's Contract Insight to serve as an integrated document editor which can sideload Add-ins. This is essentially an ASP.NET API built with Microsoft being the client. Endpoints and functions are built depending on Microsoft's design specifications.</Typography>
+                                    <Typography variant='body1' sx={{ fontSize: { xs: '.9em', sm: '1em', xl: '1em' }, color: '#CCCCCC', fontFamily: 'sans-serif' }}>Word Online Integration into CobbleStone's Contract Insight to serve as an integrated document editor which can sideload Add-ins. This is essentially an ASP.NET API built with Microsoft being the client. Endpoints and functions are built depending on Microsoft's design specifications.</Typography>
                                 </Box>
                             </Box>
                         </Box>
@@ -50,10 +49,10 @@ export default function Home(props) {
                             <Box m={1} maxWidth={'50vh'}>
                                 <Typography variant='body1' sx={{ color: '#CCCCCC', fontFamily: 'sans-serif' }}>2023 - Awaiting Spotify Approval</Typography>
                                 <Box m={1} maxWidth={'50vh'}>
-                                    <Typography variant='body1' sx={{ fontSize: { xs: '.9em', sm: '1em', xl: '1em' }, color: '#999999', fontFamily: 'sans-serif' }}>Echoes.fyi is an individual project built to assist users in retrieving and filtering song recommendations, viewing personal account statistics, and viewing track analyses. This was designed according to Spotify Design Guidelines. Full Track Streaming is available to users with premium accounts.</Typography>
+                                    <Typography variant='body1' sx={{ fontSize: { xs: '.9em', sm: '1em', xl: '1em' }, color: '#CCCCCC', fontFamily: 'sans-serif' }}>Echoes.fyi is an individual project built to assist users in retrieving and filtering song recommendations, viewing personal account statistics, and viewing track analyses. This was designed according to Spotify Design Guidelines. Full Track Streaming is available to users with premium accounts.</Typography>
                                 </Box>
                                 <Box m={1} maxWidth={'50vh'}>
-                                    <Typography variant='body1' sx={{ fontSize: { xs: '.9em', sm: '1em', xl: '1em' }, color: '#999999', fontFamily: 'sans-serif' }}>ReactJS Web Application which consumes the Spotify Web API and Spotify Playback SDK. Deployed via CloudFlare. Graphics created via Photoshop.</Typography>
+                                    <Typography variant='body1' sx={{ fontSize: { xs: '.9em', sm: '1em', xl: '1em' }, color: '#CCCCCC', fontFamily: 'sans-serif' }}>ReactJS Web Application which consumes the Spotify Web API and Spotify Playback SDK. Deployed via CloudFlare. Graphics created via Photoshop.</Typography>
                                 </Box>
                             </Box>
                         </Box>
@@ -65,10 +64,10 @@ export default function Home(props) {
                             <Box m={1} maxWidth={'50vh'}>
                                 <Typography variant='body1' sx={{ color: '#CCCCCC', fontFamily: 'sans-serif' }}>2023</Typography>
                                 <Box m={1} maxWidth={'50vh'}>
-                                    <Typography variant='body1' sx={{ fontSize: { xs: '.9em', sm: '1em', xl: '1em' }, color: '#999999', fontFamily: 'sans-serif' }}>What you're currently looking at! </Typography>
+                                    <Typography variant='body1' sx={{ fontSize: { xs: '.9em', sm: '1em', xl: '1em' }, color: '#CCCCCC', fontFamily: 'sans-serif' }}>What you're currently looking at! </Typography>
                                 </Box>
                                 <Box m={1} maxWidth={'50vh'}>
-                                    <Typography variant='body1' sx={{ fontSize: { xs: '.9em', sm: '1em', xl: '1em' }, color: '#999999', fontFamily: 'sans-serif' }}>ReactJS Web Application utilizing ThreeJS for background graphics. SVGs were created using Photoshop. 3D Model was created using Blender.</Typography>
+                                    <Typography variant='body1' sx={{ fontSize: { xs: '.9em', sm: '1em', xl: '1em' }, color: '#CCCCCC', fontFamily: 'sans-serif' }}>ReactJS Web Application utilizing ThreeJS for background graphics. SVGs were created using Photoshop. 3D Model was created using Blender.</Typography>
                                 </Box>
                             </Box>
                         </Box>
@@ -80,7 +79,7 @@ export default function Home(props) {
                             <Box m={1} maxWidth={'50vh'}>
                                 <Typography variant='body1' sx={{ color: '#CCCCCC', fontFamily: 'sans-serif' }}>2022 - 2023</Typography>
                                 <Box m={1} maxWidth={'50vh'}>
-                                    <Typography variant='body1' sx={{ fontSize: { xs: '.9em', sm: '1em', xl: '1em' }, color: '#999999', fontFamily: 'sans-serif' }}>This is an individually developed project created during my time at CobbleStone Software. This project is a web application injected in Word Services (Word Desktop, Word Online, etc.) and sideloaded according to an XML Manifest. This allows for custom ribbon tabs, buttons, and functions.
+                                    <Typography variant='body1' sx={{ fontSize: { xs: '.9em', sm: '1em', xl: '1em' }, color: '#CCCCCC', fontFamily: 'sans-serif' }}>This is an individually developed project created during my time at CobbleStone Software. This project is a web application injected in Word Services (Word Desktop, Word Online, etc.) and sideloaded according to an XML Manifest. This allows for custom ribbon tabs, buttons, and functions.
                                         Some implemented custom functions include replacing contract clauses based on a similarity coefficient. This is made more accurate using a Porter Stemming Algorithm. Other functions include opening files stored in a database directly inside of Word, uploading files to that database, comparing documents using Aspose, and several other complex functions. Requires Contract Insight Enterprise Software for use.</Typography>
                                 </Box>
                             </Box>
@@ -89,6 +88,5 @@ export default function Home(props) {
                     </Box>
                 </Fade>
             </Box>
-        </Box>
     );
 }

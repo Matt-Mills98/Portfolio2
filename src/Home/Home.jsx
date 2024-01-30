@@ -15,8 +15,6 @@ export default function Home(props) {
         setLoaded(true);
     }
     return (
-        <Box sx={{ background: 'linear-gradient(90deg, rgba(15,15,15,1) 0%, rgba(15,15,15,.75) 47%, rgba(15,15,15,0) 100%);', position: 'absolute', top: '0px', left: '0px', height:'100vh', width:'50vw' }}>
-
             <Box sx={{ background: 'transparent', position: 'absolute', top: '50%', left: '30px', transform: 'translateY(-50%)' }}>
                 <Fade in={loaded}>
                     <Box sx={{
@@ -322,6 +320,5 @@ export default function Home(props) {
                 </Fade>
 
             </Box >
-        </Box>
     );
 }
