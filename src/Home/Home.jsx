@@ -17,7 +17,7 @@ export default function Home(props) {
     return (
         <Box sx={{ bgcolor: 'transparent', position: 'absolute', top: '50%', left: '30px', transform: 'translateY(-50%)' }}>
                 <Fade in={loaded}>
-                    <Box sx={{
+                    <Box sx={{margin:'10px',
                         fontFamily: 'sans-serif',
                     }}>
                         <Typography variant='h1' sx={{ fontSize: {xs:'4em',md:'5em', xl:'6em'},
