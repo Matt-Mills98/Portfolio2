@@ -35,7 +35,7 @@ export default function Home(props) {
                                 <Typography variant='h6' sx={{ color: color, fontFamily: 'sans-serif' }}>WOPI Protocol Implementation</Typography>
                             </Stack>
                             <Box m={1} maxWidth={'50vh'}>
-                                <Typography variant='body1' sx={{ color: '#CCCCCC', fontFamily: 'sans-serif' }}>2023 - In Progress</Typography>
+                                <Typography variant='body1' sx={{ color: '#FFFFFF', fontFamily: 'sans-serif' }}>2023 - In Progress</Typography>
                                 <Box m={1} maxWidth={'50vh'}>
                                     <Typography variant='body1' sx={{ fontSize: { xs: '.9em', sm: '1em', xl: '1em' }, color: '#CCCCCC', fontFamily: 'sans-serif' }}>Word Online Integration into CobbleStone's Contract Insight to serve as an integrated document editor which can sideload Add-ins. This is essentially an ASP.NET API built with Microsoft being the client. Endpoints and functions are built depending on Microsoft's design specifications.</Typography>
                                 </Box>
@@ -47,7 +47,7 @@ export default function Home(props) {
                                 <IconButton ><Box component={'img'} src={'./BulletPoint.png'} sx={{ width: '15px', transition: '.3s', ':hover': { width: '18px', filter: 'brightness(5)' } }}></Box></IconButton>
                             </Stack>
                             <Box m={1} maxWidth={'50vh'}>
-                                <Typography variant='body1' sx={{ color: '#CCCCCC', fontFamily: 'sans-serif' }}>2023 - Awaiting Spotify Approval</Typography>
+                                <Typography variant='body1' sx={{ color: '#FFFFFF', fontFamily: 'sans-serif' }}>2023 - Awaiting Spotify Approval</Typography>
                                 <Box m={1} maxWidth={'50vh'}>
                                     <Typography variant='body1' sx={{ fontSize: { xs: '.9em', sm: '1em', xl: '1em' }, color: '#CCCCCC', fontFamily: 'sans-serif' }}>Echoes.fyi is an individual project built to assist users in retrieving and filtering song recommendations, viewing personal account statistics, and viewing track analyses. This was designed according to Spotify Design Guidelines. Full Track Streaming is available to users with premium accounts.</Typography>
                                 </Box>
@@ -62,7 +62,7 @@ export default function Home(props) {
                                 <IconButton ><Box component={'img'} src={'./BulletPoint.png'} sx={{ width: '15px', transition: '.3s', ':hover': { width: '18px', filter: 'brightness(5)' } }}></Box></IconButton>
                             </Stack>
                             <Box m={1} maxWidth={'50vh'}>
-                                <Typography variant='body1' sx={{ color: '#CCCCCC', fontFamily: 'sans-serif' }}>2023</Typography>
+                                <Typography variant='body1' sx={{ color: '#FFFFFF', fontFamily: 'sans-serif' }}>2023</Typography>
                                 <Box m={1} maxWidth={'50vh'}>
                                     <Typography variant='body1' sx={{ fontSize: { xs: '.9em', sm: '1em', xl: '1em' }, color: '#CCCCCC', fontFamily: 'sans-serif' }}>What you're currently looking at! </Typography>
                                 </Box>
