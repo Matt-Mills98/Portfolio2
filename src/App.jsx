@@ -216,7 +216,7 @@ export default function App() {
                 <Tooltip title="GitHub" placement="top" arrow componentsProps={{
                   tooltip: {
                     sx: {
-                      fontFamily: '"Segoe UI"',
+                      fontFamily: '"Segoe UI", Arial',
                       fontSize: '.9em',
                       color: 'black',
                       bgcolor: accents[accent],
@@ -231,7 +231,7 @@ export default function App() {
                 <Tooltip title="LinkedIn" placement="top" arrow componentsProps={{
                   tooltip: {
                     sx: {
-                      fontFamily: '"Segoe UI"',
+                      fontFamily: '"Segoe UI", Arial',
                       fontSize: '.9em',
                       color: 'black',
                       bgcolor: accents[accent],
@@ -246,7 +246,7 @@ export default function App() {
                 <Tooltip title="Contact Me" placement="top" arrow componentsProps={{
                   tooltip: {
                     sx: {
-                      fontFamily: '"Segoe UI"',
+                      fontFamily: '"Segoe UI", Arial',
                       fontSize: '.9em',
                       color: 'black',
                       bgcolor: accents[accent],
@@ -261,7 +261,7 @@ export default function App() {
                 <Tooltip title="Resume" placement="top" arrow componentsProps={{
                   tooltip: {
                     sx: {
-                      fontFamily: '"Segoe UI"',
+                      fontFamily: '"Segoe UI", Arial',
                       fontSize: '.9em',
                       color: 'black',
                       bgcolor: accents[accent],
