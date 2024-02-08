@@ -22,6 +22,8 @@ import EmailIcon from '@mui/icons-material/Email';
 import LoadingAnimation from './Animation/LoadingAnimation';
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import LemonMilk from "./lemonmilk.ttf";
+import Rubik from "./Rubik.ttf";
+
 import CssBaseline from "@mui/material/CssBaseline";
 import Tooltip from '@mui/material/Tooltip';
 import myFile from '../src/assets/MMills_Resume_2024.pdf'
@@ -37,6 +39,7 @@ const theme = createTheme({
         "@font-face": {
           fontFamily: "LemonMilk",
           src: `url(${LemonMilk}) format("truetype")`
+          
         },
 
       }

@@ -27,15 +27,15 @@ export default function Awards(props) {
                             color: 'white'
                         }}>Awards</Typography>
                         <Box m={1} my={2}>
-                            <Typography variant='h6' sx={{ color: color, fontFamily: 'sans-serif' }}>Developer of the Year - CobbleStone Software 2023</Typography>
+                            <Typography variant='h6' sx={{ color: color, fontFamily: 'Rubik' }}>Developer of the Year - CobbleStone Software 2023</Typography>
                             <Box m={1} maxWidth={'50vh'}>
-                                <Typography variant='body1' sx={{fontSize: {xs:'.9em', sm:'1em', xl:'1em'}, color: '#CCCCCC', fontFamily: 'sans-serif' }}>Awarded for my contributions to CobbleStone's Contract Insight Software through the completion of the CobbleStone Add-In for Word</Typography>
+                                <Typography variant='body1' sx={{fontSize: {xs:'.9em', sm:'1em', xl:'1em'}, color: '#CCCCCC', fontFamily: 'Rubik' }}>Awarded for my contributions to CobbleStone's Contract Insight Software through the completion of the CobbleStone Add-In for Word</Typography>
                             </Box>
                         </Box>
                         <Box m={1}>
-                            <Typography variant='h6' sx={{ color: color, fontFamily: 'sans-serif' }}>Excellence in Information Technology - University of Scranton 2021</Typography>
+                            <Typography variant='h6' sx={{ color: color, fontFamily: 'Rubik' }}>Excellence in Information Technology - University of Scranton 2021</Typography>
                             <Box m={1} maxWidth={'50vh'}>
-                                <Typography variant='body1' sx={{fontSize: {xs:'.9em', sm:'1em', xl:'1em'}, color: '#CCCCCC', fontFamily: 'sans-serif' }}>Awarded for obtaining the highest GPA among peers in the same major</Typography>
+                                <Typography variant='body1' sx={{fontSize: {xs:'.9em', sm:'1em', xl:'1em'}, color: '#CCCCCC', fontFamily: 'Rubik' }}>Awarded for obtaining the highest GPA among peers in the same major</Typography>
                             </Box>
                         </Box>
                     </Box>
